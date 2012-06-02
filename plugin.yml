@@ -20,9 +20,6 @@ permissions:
   SideKickEconomy.give:
    description: Uses this plugin
    default: op
-  SideKickEconomy.admin:
-   description: Uses this plugin
-   default: op
   SideKickEconomy.set:
    description: Uses this plugin
    default: op
