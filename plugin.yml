@@ -1,0 +1,31 @@
+name: SideKickEconomy
+version: 1.0
+main: com.emericask8ur.SideKickEconomy.Main
+author: emericask8ur
+description: SideKick's Economy System. Including a developer API.
+commands:
+  Economy:
+   description: Menu
+   usage: /Economy
+  S:
+   description: SideKickEconomy
+   usage: /S
+permissions:
+  SideKickEconomy.balance:
+   description: Uses this plugin
+   default: op
+  SideKickEconomy.pay:
+   description: Uses this plugin
+   default: op
+  SideKickEconomy.give:
+   description: Uses this plugin
+   default: op
+  SideKickEconomy.admin:
+   description: Uses this plugin
+   default: op
+  SideKickEconomy.set:
+   description: Uses this plugin
+   default: op
+  SideKickEconomy.take:
+   description: Uses this plugin
+   default: op
