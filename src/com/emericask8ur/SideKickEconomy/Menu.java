@@ -11,8 +11,15 @@ public class Menu {
 		ChatColor a = ChatColor.GRAY;
 		ChatColor y = ChatColor.YELLOW;
 		ChatColor x = ChatColor.DARK_RED;
+		ChatColor red = ChatColor.RED;
 			sender.sendMessage(y + "☤----" + g + "SideKickEconomy" + y + "----☤");
 			sender.sendMessage(ChatColor.AQUA + "Welcome: " + x + sender.getName());
+			if(Economy.getMoney(sender.getName()) == 0){
+				sender.sendMessage(y + "[" + red + "Warning" + y + "] " + a + "Your balance is " + g + "$" + Economy.getMoney(sender.getName()));
+			}
+			if(Economy.getMoney(sender.getName()) < 0){
+				sender.sendMessage(y + "[" + red + "Warning" + y + "] " + a + "You are in debt!");
+			}
 			if(sender.hasPermission("SideKickEconomy.balance")){
 			sender.sendMessage(a + "/S Money - " + g + "Shows your balance");
 			}

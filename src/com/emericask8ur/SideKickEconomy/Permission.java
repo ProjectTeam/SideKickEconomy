@@ -22,6 +22,21 @@ public class Permission {
 	}
 	
 	/**
+	 * Checks and returns ifa player has permission to use a node with SideKickEconomy.Node</br>
+	 * If not returns false
+	 * @param player
+	 * @param node
+	 * @return
+	 */
+	public static boolean hasSideKickEconomyNode(Player player, String node){
+		if(player.hasPermission("SideKickEconomy." + node)){
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	/**
 	 * Checks and returns if a player has permission to use a node.</br>
 	 * If not, the player will return a message "You do not have permission".
 	 * @param player
