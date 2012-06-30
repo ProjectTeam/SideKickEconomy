@@ -9,6 +9,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 
@@ -20,6 +21,7 @@ public class Main extends JavaPlugin{
 	public FileConfiguration BlackList;
 	public static String plugindir = "plugins/SideKickEconomy/";
 	public static File cfg = new File(plugindir + "SideKickEconomy.yml");
+	public static Plugin plugin;
 	
 
 	@Override
@@ -29,6 +31,7 @@ public class Main extends JavaPlugin{
 
 	@Override 
 	public void onEnable() {
+		plugin = this;
 		this.getServer().getPluginManager().registerEvents(new Events(), this);
 		loadConfig();
 	}

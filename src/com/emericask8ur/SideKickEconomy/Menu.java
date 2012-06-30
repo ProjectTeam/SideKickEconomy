@@ -35,6 +35,9 @@ public class Menu {
 			if(sender.hasPermission("SideKickEconomy.take")){
 				sender.sendMessage(a + "/S Take [Username] [Amount] - " + g + "Takes amount from user");
 			}
+			if(!sender.hasPermission("SideKickEconomy.take") && !sender.hasPermission("SideKickEconomy.balance") && !sender.hasPermission("SideKickEconomy.pay") && !sender.hasPermission("SideKickEconomy.give") && !sender.hasPermission("SideKickEconomy.set") && !sender.hasPermission("SideKickEconomy.take")){
+				sender.sendMessage(ChatColor.GRAY + "[" + ChatColor.YELLOW + "SideKickEconomy" + ChatColor.GRAY + "] " + ChatColor.RED + Main.plugin.getDescription().getVersion());
+			}
 	  }
 }
 
