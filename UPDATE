@@ -1,3 +1,4 @@
 ==1.0.1==
 -Updated API
 -Warnings if your in debt or your balanced reached $0
+-If you do not have any permission and try to use /Economy, Shows Version instead of blank.
